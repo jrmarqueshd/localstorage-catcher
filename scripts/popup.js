@@ -54,3 +54,4 @@ chrome.tabs.query({ currentWindow: true, active: true }, async function ([tab]) 
 		console.log(error.message)
 	}
 });
+
