@@ -6,7 +6,6 @@
 	"background": {
     "service_worker": "scripts/background.js"
   },
-  "css": ["tailwind.min.css"],
 	"permissions": ["storage", "tabs", "scripting"],
   "action": {
     "default_popup": "popup.html",
