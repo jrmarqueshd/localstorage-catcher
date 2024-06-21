@@ -32,6 +32,8 @@ body {
 
 .main-wrapper .nav ul {
   list-style: none;
+	display: flex;
+	flex-direction: column;
 }
 
 .main-wrapper .nav ul li {
@@ -42,7 +44,19 @@ body {
   transition: all 200ms ease-in-out;
   margin-bottom: 4px;
 	position: relative;
-	overflow-wrap: break-word; 
+	overflow-wrap: break-word;
+
+	display: flex; /* Adicionado para alinhar checkbox e texto */
+  align-items: center; /* Alinha os itens verticalmente */
+}
+
+.main-wrapper .nav ul li input[type="checkbox"] {
+  margin-right: 8px; /* Espaço entre o checkbox e o texto */
+}
+
+.main-wrapper .nav ul li.selected {
+  font-weight: bold; /* Destaque para o item selecionado */
+	order: -1;
 }
 
 .main-wrapper .nav ul li::before {
